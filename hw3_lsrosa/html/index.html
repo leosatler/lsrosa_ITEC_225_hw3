@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../img/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../img/favicon-16x16.png"
+    />
+    <link rel="manifest" href="../site.webmanifest" />
+    <title>Formula Calculator</title>
+  </head>
+  <body>
+    <h1>Formula Calculator</h1>
+    <br /><br />
+
+    <div class="content">
+      <div>
+        <h2>Force Calculator</h2>
+      </div>
+      <form for="force" method="POST" action="index.html">
+        <label for="mass">Mass</label>
+        <input
+          type="text"
+          id="mass"
+          name="mass"
+          placeholder="Mass in Kg"
+        /><br /><br />
+        <label for="acc">Acceleration</label>
+        <input
+          type="text"
+          id="acc"
+          name="acc"
+          placeholder="Acceleration in m/s^2"
+        /><br /><br />
+      </form>
+      <button class="btn btn-three" type="button" id="but1" onclick="force();">
+        Calculate
+      </button>
+      <div>
+        <p id="force"></p>
+      </div>
+    </div>
+
+    <div class="content">
+      <div>
+        <h2>Displacement Calculator</h2>
+      </div>
+      <form for="displacement" method="POST" action="index.html">
+        <label for="velocity">Velocity</label>
+        <input
+          type="text"
+          id="velocity"
+          name="velocity"
+          placeholder="Velocity m/s"
+        /><br /><br />
+        <label for="time">Time</label>
+        <input
+          type="text"
+          id="time"
+          name="time"
+          placeholder="Time in Seconds"
+        /><br /><br />
+        <label for="acc">Acceleration</label>
+        <input
+          type="text"
+          id="acc2"
+          name="acc2"
+          placeholder="Acceleration in m/s^2"
+        /><br /><br />
+      </form>
+      <button class="btn btn-three" type="button" id="but2" onclick="disp();">
+        Calculate
+      </button>
+      <div>
+        <p id="dis"></p>
+      </div>
+    </div>
+
+    <div class="content">
+      <div>
+        <h2>Quadratic Calculator</h2>
+      </div>
+      <form for="quadratic" method="POST" action="index.html">
+        <label for="side a">Side a</label>
+        <input type="text" id="a" name="a" placeholder="a" /><br /><br />
+        <label for="side b">Side b</label>
+        <input type="text" id="b" name="b" placeholder="b" /><br /><br />
+        <label for="side c">Side c</label>
+        <input type="text" id="c" name="c" placeholder="c" /><br /><br />
+      </form>
+      <button class="btn btn-three" type="button" id="but3" onclick="quad();">
+        Calculate
+      </button>
+      <div>
+        <p id="quadr"></p>
+      </div>
+    </div>
+
+    <div class="content">
+      <div>
+        <h2>Finance Calculator</h2>
+      </div>
+      <form for="finance" method="POST" action="index.html">
+        <label for="amount">PMT</label>
+        <input
+          type="text"
+          id="amount"
+          name="amount"
+          placeholder="Dollar Amount"
+        /><br /><br />
+        <label for="Interest">Interest Rate</label>
+        <input
+          type="text"
+          id="interest"
+          name="interest"
+          placeholder="Interest Rate"
+        /><br /><br />
+        <label for="periods">Periods</label>
+        <input
+          type="text"
+          id="peri"
+          name="peri"
+          placeholder="Periods of Repayment"
+        /><br /><br />
+      </form>
+      <button
+        class="btn btn-three"
+        type="button"
+        id="but4"
+        onclick="finance();"
+      >
+        Calculate
+      </button>
+      <div>
+        <p id="fin"></p>
+      </div>
+    </div>
+    <div>
+      <footer class="foot">
+        Made by Leonardo Rosa <br />
+        ITEC 225
+      </footer>
+    </div>
+
+    <script src="../script/script.js"></script>
+  </body>
+</html>

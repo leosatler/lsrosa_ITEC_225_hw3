@@ -1,0 +1,100 @@
+body {
+  background: rgb(0, 239, 254);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 239, 254, 1) 0%,
+    rgba(49, 3, 175, 1) 50%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+}
+h1 {
+  background-color: #e7e9e7;
+  padding: 2%;
+  text-align: center;
+  color: rgb(146, 145, 145);
+  font: bolder;
+  margin: auto;
+  border-radius: 0.5em;
+  font-weight: bolder;
+  font-family: "Josefin Sans", sans-serif;
+}
+label {
+  display: inline-table;
+  width: 180px;
+  text-align: right;
+  float: left;
+  margin-right: 2%;
+}
+input {
+  float: left;
+  border-radius: 0.3em;
+}
+.foot {
+  position: static;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #e7e9e7;
+  color: rgb(146, 145, 145);
+  text-align: left;
+}
+
+.content {
+  padding-top: 1%;
+  padding-bottom: 2%;
+  text-align: center;
+  border-color: #e7e9e7;
+  background-color: none;
+  margin-left: 45em;
+  margin-right: 45em;
+  border-radius: 0.5em;
+  border-style: outset;
+  color: white;
+}
+.btn {
+  line-height: 20px;
+  height: 30px;
+  text-align: center;
+  width: 150px;
+  cursor: pointer;
+  font-family: "Josefin Sans", sans-serif;
+}
+.btn-three {
+  color: rgb(112, 111, 111);
+  transition: all 0.5s;
+  position: relative;
+}
+.btn-three::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: all 0.3s;
+}
+.btn-three:hover::before {
+  opacity: 0;
+  transform: scale(0.5, 0.5);
+}
+.btn-three::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.5s;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  transform: scale(1.2, 1.2);
+}
+.btn-three:hover::after {
+  opacity: 1;
+  transform: scale(1, 1);
+}
